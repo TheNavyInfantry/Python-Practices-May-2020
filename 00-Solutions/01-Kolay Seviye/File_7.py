@@ -1,3 +1,4 @@
+
 def centuryfromyear(year):
     if len(year) <= 3:
         converter = year[:1]
@@ -10,5 +11,3 @@ def centuryfromyear(year):
 
 user_input=str(input("Type a year to convert it into the century: "))
 print(centuryfromyear(user_input))
-
-
