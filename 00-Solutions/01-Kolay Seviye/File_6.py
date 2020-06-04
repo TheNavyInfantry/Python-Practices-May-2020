@@ -1,17 +1,18 @@
-vowels = 'aeiouAEIOU'
-vowel_list = []
-for v in vowels:
-    vowel_list.append(v)
-print(vowel_list)
+def vowel_remover(sentence):
+    vowels = 'aeiouAEIOU'
+    vowels_list = []
+    for element in vowels:
+        vowels_list.append(element)
+        for char in sentence:
+            if char in vowels_list:
+                sentence =  sentence.replace(char,'')
+    return sentence
 
-user_input = str(input('Type: '))
-empty_list = []
+sentence = input('Type your sentence: ')
+print('New sentence is: ',vowel_remover(sentence))
 
-for each in user_input:
-    empty_list.append(each)
-    if empty_list in vowel_list:
-        empty_list.remove(vowel_list)
-print(empty_list)
+
+
 
 
 # Bir string alan ve tüm sesli harflerin çıkarıldığı yeni bir string döndüren bir fonksiyon oluşturun.
