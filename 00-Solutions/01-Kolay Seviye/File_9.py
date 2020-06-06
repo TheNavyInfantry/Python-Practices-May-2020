@@ -19,3 +19,14 @@ def alp_num_counter(user_input):
 user_input=input('Type: ')
 user_input = user_input.lower()
 print(alp_num_counter({'Alphabet':counted_alphabet, 'Numbers':counted_number}))
+
+
+######SECOND METHOD######
+
+from collections import Counter
+
+def input_Counter(user_input):
+        return user_input
+
+user_input=input('Type: ')
+print(Counter(user_input))
