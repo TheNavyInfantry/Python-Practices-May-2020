@@ -1,27 +1,60 @@
-# numbers = [1, 2, 3, 4, 5]
 
-numbers = [1, 2]
+limit = int(input('Type a limit: '))
+count = 0
 
-indices = []
+numbers = []
+while count < limit:
+    user_Input = input('Enter your numbers: ')
+    numbers.append(user_Input)
+    count +=1
+    print(numbers)
 
-for each in numbers:
-    index = numbers.index(each)
-    indices.append(index)
-
-print(indices)
-
-
+sum_List = []
+for value in numbers:
+    operation = int(value) * numbers.index(value)
+    sum_List.append(operation)
+print(sum(sum_List))
 
 
 
 
 
-# Her elemanın kendi indeksi ile çarpıldığı listede tüm elemanların toplamını döndürün. Boş listeler için 0 döndürün.
-#
-# Örnekler
-#
-# index_carpici([1, 2, 3, 4, 5]) ➞ 40
-# # (1*0 + 2*1 + 3*2 + 4*3 + 5*4)
-#
-# index_carpici([-3, 0, 8, -6]) ➞ -2
-# # (-3*0 + 0*1 + 8*2 + -6*3)
+        # print('each', value, 'index', numbers.index(value))
+
+
+
+
+
+
+
+
+def index_multiplier():
+    limit = int(input('Type a limit: '))
+    count = 0
+
+    numbers = []
+    while count < limit:
+        user_Input = input('Enter your numbers: ')
+        numbers.append(user_Input)
+        count += 1
+        print(numbers)
+
+    sum_List = []
+    for value in numbers:
+        operation = int(value) * numbers.index(value)
+        sum_List.append(operation)
+    print(sum(sum_List))
+
+print('Sum is: ', index_multiplier())
+
+
+
+
+
+
+
+
+
+
+
+
