@@ -4,7 +4,7 @@ def simplification(data):
     else:
         return data
 
-data = [[[[[[[[[[[[[[[[['Merhaba']]]]]]]]]]]]]]]]]
+data = [[[[[[[[[[[[[[[[['Find this text']]]]]]]]]]]]]]]]]
 print(simplification(data))
 
 
